@@ -81,16 +81,16 @@ function Accueil() {
       <CardCol  xs={24} sm={12} md={8} lg={6}>
         <Card
           bordered
-          cover={<img alt="example" src={imag} style={{ width: '100%', height: 'auto' }} />}
+          cover={<img alt="example" src={imag} style={{ width: '100%', height: 'auto' }} />} style={{ backgroundColor:"#F1F1F1" }}
         >
           <Title level={4}>Les enfants doivent recevoir une éducation</Title>
           <Paragraph>Lorem ipsum dolor sit amet, onsectetur adipiscing contre ectetur nulla. Sed à ullamcorper risus.</Paragraph>
         </Card>
       </CardCol >
-      <CardCol  xs={24} sm={12} md={8} lg={6}>
+      <CardCol  xs={24} sm={12} md={8} lg={6} >
         <Card
           bordered
-          cover={<img alt="example" src={image} style={{ width: '100%', height: 'auto' }} />} 
+          cover={<img alt="example" src={image} style={{ width: '100%', height: 'auto' }} />} style={{ backgroundColor:"#F1F1F1" }}
         >
           <Title level={4}>Apportez de l'électricité et de la lumière</Title>
           <Paragraph>Lorem ipsum dolor sit amet, onsectetur adipiscing contre ectetur nulla. Sed à ullamcorper risus.</Paragraph>
@@ -99,10 +99,12 @@ function Accueil() {
       <CardCol  xs={24} sm={12} md={8} lg={6}>
         <Card
           bordered
-          cover={<img alt="example" src={images} style={{ width: '100%', height: 'auto' }} />} 
+          cover={<img alt="example" src={images} style={{ width: '100%', height: 'auto' }} />} style={{ backgroundColor:"#F1F1F1" }} 
         >
+          <div >
           <Title level={4} style={{ marginTop:"50px" }}>Objets porteurs d'eau </Title>
           <Paragraph>Lorem ipsum dolor sit amet, onsectetur adipiscing contre ectetur nulla. Sed à ullamcorper risus.</Paragraph>
+          </div>
         </Card>
       </CardCol >
     </Row>
