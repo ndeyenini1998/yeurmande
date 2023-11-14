@@ -3,7 +3,7 @@ import { Menu, Dropdown, Button } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import Logo from "../../Images/logo.png";
 
-function Navbar(props) {
+function Navbar(props,) {
   const handleMenuClick = (e) => {
     // Ajoutez le traitement ici en fonction des éléments du menu cliqués
     console.log("Clicked on menu item:", e.key);
@@ -18,7 +18,7 @@ function Navbar(props) {
   );
 }
 
-const Nav = () => {
+const Nav = ({isInline}) => {
   return (
     <div style={{ padding: "10px", background: "#ffff", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
       {/* Logo avant Accueil */}
@@ -27,7 +27,7 @@ const Nav = () => {
       </div>
       {/* Elements textuels à centrer */}
       <div>
-        <Menu theme="#fff" mode="horizontal">
+        <Menu theme="#fff" mode={isInline?"inline":"horizontal" }>
           <Menu.Item key="home">Accueil</Menu.Item>
           <Dropdown overlay={<Navbar />} trigger={['click']}>
             <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()} href="/">

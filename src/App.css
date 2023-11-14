@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width:500px)and (max-width:1200px){
+  .headerMenu{
+    display: none;
+  }
+}
+/* @media(max-width:1200px){
+  .headerMenu{
+    display: block;
+  }
+} */
+
+
+@media (min-width:500px){
+  .menuIcon{
+    display: none;
+  }
+}
